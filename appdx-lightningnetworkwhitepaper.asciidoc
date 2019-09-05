@@ -5,6 +5,7 @@
 === The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments
 
 Joseph Poon - _joseph@lightning.network_
+
 Thaddeus Dryja - _rx@awsomnet.org_
 
 pass:[<a href="https://lightning.network" class="orm:hideurl"><em>https://lightning.network</em></a>]
@@ -13,3 +14,5 @@ pass:[<a href="https://lightning.network" class="orm:hideurl"><em>https://lightn
 
 ==== 1. The Bitcoin Blockchain Scalability Problem
 The Bitcoin blockchain holds great promise for distributed ledgers, but the blockchain as a payment platform, by itself, cannot cover the world's commerce anytime in the near future. The blockchain is a gossip protocol whereby all state modifications to the ledger are broadcast to all participants. It is through this ``gossip protocol'' that consensus of the state, everyone's balances, is agreed upon. If each node in the bitcoin network must know about every single transaction that occurs globally, that may create a significant drag on the ability of the network to encompass all global financial transactions. It would instead be desirable to encompass all transactions in a way that doesn't sacrifice the decentralization and security that the network provides.
+
+The payment network Visa achieved 47,000 peak transactions per second (tps) on its network during the 2013 holidays, and currently averages hundreds of millions per day. Currently, Bitcoin supports less than 7 transactions per second with a 1 megabyte block limit. If we use an average of 300 bytes per bitcoin transaction and assumed unlimited block sizes, an equivalent capacity to peak Visa transaction volume of 47,000/tps would be nearly 8 gigabytes per Bitcoin block, every ten minutes on average. Continuously, that would be over 400 terabytes of data per year.
